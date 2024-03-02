@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // スクロール位置が100vhを超えたら
             if (window.scrollY > window.innerHeight) {
                 // 黒いロゴに切り替え
-                headerLogo.src = '../ARSENAL-Q62/img/logo/Q62-Arsenal_logo_Arsenal-Q62_logo_header_bk.svg';
+                headerLogo.src = 'https://qoo622.github.io/Arsenal-Q62/img/logo/Q62-Arsenal_logo_Arsenal-Q62_logo_header_bk.svg';
             } else {
                 // 白いロゴに戻す
-                headerLogo.src = '../ARSENAL-Q62/img/logo/Q62-Arsenal_logo_Arsenal-Q62_logo_header_wh.svg';
+                headerLogo.src = 'https://qoo622.github.io/Arsenal-Q62/img/logo/Q62-Arsenal_logo_Arsenal-Q62_logo_header_wh.svg';
             }
         });
     }
