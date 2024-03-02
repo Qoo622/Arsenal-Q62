@@ -213,6 +213,12 @@ h4 {
 	margin: 0;
 	padding: 24px;
 }
+@media (max-width: 1000px) {
+	.Content-number {
+		font-size: 1.5rem;
+		padding: 12px;
+	}
+}
 
 /* - - - - - - - - - - 汎用コンポーネント周り - - - - - - - - - - */
 
