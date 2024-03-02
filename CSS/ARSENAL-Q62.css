@@ -148,7 +148,7 @@ a {
 }
 
 h1 {
-	font-weight: bold;
+	font-weight: Bold;
 	font-size: 2rem;
 	letter-spacing: 5px;
 }
@@ -250,15 +250,11 @@ h4 {
 	color: #000;
 }
 
-.Share {
-	width: 100vw;
-	margin: 0 auto;
-	padding: 0px 48px;
-	text-align: center;
-}
-
-.Share-button {
-	
+.btn-Share {
+	b
+	width: 36px;
+	height: 36px;
+	position: fixed;
 }
 
 .fa-brands {
@@ -273,6 +269,32 @@ h4 {
 	.space {
 		height: 2vh;
 	}
+}
+
+.Twitter-share {
+  position: fixed;
+  bottom: -160px; /* ボタンの初期位置（画面下部から隠れている） */
+  left: -40px;
+  transform: rotate(90deg);
+  transition: bottom 0.3s ease; /* アニメーションの追加 */
+}
+
+/* 一定のスクロール量でボタンを表示するためのクラス */
+.Twitter-share.show-button {
+  bottom: 96px; /* ボタンの表示位置 */
+}
+
+.Twitter-share a {
+	font-weight: bold;
+	color: #000;
+	background-color: #C0FF00;
+	padding: 16px 24px 16px 16px;
+	border-radius: 8px 8px 0 0;
+}
+
+.Twitter-share a:hover {
+	background-color: ;
+	color: #2D3A00;
 }
 
 /* - - - - - - - - - - ここからHeader周り - - - - - - - - - - */
@@ -304,6 +326,10 @@ header a:hover {
 }
 
 .header-logo {
+	height: 24px;
+}
+
+.header-logo_static {
 	height: 24px;
 }
 
