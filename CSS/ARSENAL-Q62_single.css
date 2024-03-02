@@ -1,7 +1,3 @@
-body {
-	background-color: rgba(20,20,50,1);
-	color: White;
-}
 
 /* - - - - - - ここからTop-image周り - - - - - - */
 .single_top-wrapper {
@@ -92,14 +88,50 @@ body {
 }
 
 /* - - - - - - ここからAbout周り - - - - - - */
-.Feature-wrapper {
-	width: 100vw;
-	max-width: 1920px;
-	margin: 0 auto;
+
+.About {
+	position: relative;
 }
 
-.Feature-wrapper img {
+.About img {
+	height: 100vh;
 	width: 100%;
+	object-fit: cover;
+	position: sticky;
+	top: 0;
+	z-index: -1;
+}
+
+.About-text {
+	max-width: 64vw;
+	min-width: 375px;
+	margin: 24px auto;
+	padding: 0px 48px 72px 48px;
+	position: relative;
+	top: -80vh;
+}
+
+@media (max-width: 1000px) {
+	.About-text {
+		max-width: 100vw;
+		padding: ;
+	}
+}
+
+.Content-block_title {
+	padding: 24px;
+	background-color: #000;
+	color: #C0FF00;
+	font-weight: Bold;
+	display: inline-block;
+	margin: 0 0 -8px 0;
+}
+
+.Content-block_text {
+	padding: 24px;
+	background-color: #FFF;
+	color: #000;
+	margin: -8px 0 0 24px;
 }
 
 /* - - - - - - ここからFeature周り - - - - - - */
@@ -107,3 +139,6 @@ body {
 .Column-left img {
 	width: 100%;
 }
+
+
+/* ここから実験コード */
