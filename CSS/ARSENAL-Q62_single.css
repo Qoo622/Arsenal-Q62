@@ -136,9 +136,93 @@
 
 /* - - - - - - ここからFeature周り - - - - - - */
 
-.Column-left img {
+.V-Card {
 	width: 100%;
+	display: flex;
+	border: 1px solid #FFF;
+	margin: 24px 0;
 }
 
+.V-Card_Photo {
+	flex: 7;
+	overflow: hidden; /* 親要素をはみ出る部分を非表示にする */
+}
 
-/* ここから実験コード */
+.V-Card_Photo img {
+	width: 100%;
+	height: 100%; /* 親要素（V-Card_Photo）の高さに合わせる */
+    object-fit: cover; /* 画像をトリミングして親要素に合わせる */
+}
+
+.V-Card_Text {
+	flex: 3;
+}
+
+.V-Card_Text h3 {
+	padding: 0 24px;
+}
+
+.V-Card_Text .Base-text {
+	padding: 0 24px;
+    margin-bottom: 24px; /* p タグの下マージンをリセット */
+}
+
+@media (max-width: 1000px) {
+	.V-Card {
+		flex-direction: column;
+	}
+	
+	.V-Card_Photo {
+		order: 1;
+	}
+	
+	.V-Card_Text {
+		order: 2;
+	}
+}
+
+/* - - - - - - ここからUpdate - - - - - - - */
+.Update-content {
+	color: #FFF;
+}
+/* - - - - - - ここからConversion - - - - - - - */
+.Conversion {
+	display: flex;
+	background-color: #FFF;
+	border: 8px solid #C0FF00;
+	width: 100%;
+	transition: all 0.5s;
+}
+
+.Conversion .Text {
+	flex: auto;
+	padding: 24px 48px;
+	color: #000;
+}
+
+.Conversion .Button {
+	background-color: #C0FF00;
+	color: #000;
+	font-weight: bold;
+	padding: 24px 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Conversion:hover {
+	background-color: #C0FF00;
+}
+
+@media (max-width: 1000px) {
+	.Conversion {
+		flex-direction: column;
+	}
+	.Conversion .Text {
+		padding: 24px;
+	}
+	.Conversion .Button {
+		padding: 24px;
+	}
+}
+
