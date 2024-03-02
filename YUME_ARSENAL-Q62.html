@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>YUME | ARSENAL-Q62</title>
-		<link rel="stylesheet" href="https://qoo622.github.io/Arsenal-Q62/CSS/ARSENAL-Q62.css">
-		<link rel="stylesheet" href="https://qoo622.github.io/Arsenal-Q62/CSS/ARSENAL-Q62_single.css">
+		<link rel="stylesheet" href="../ARSENAL-Q62/CSS/ARSENAL-Q62.css">
+		<link rel="stylesheet" href="../ARSENAL-Q62/CSS/ARSENAL-Q62_single.css">
 		<!-- Noto sans JPの読み込み -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,26 +18,49 @@
 		
 		<!-- fontawesomeアイコンの読み込み -->
 		<script src="https://kit.fontawesome.com/32bd0e5d50.js" crossorigin="anonymous"></script>
+		<!-- JSの読み込み -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+		<script src="ARSENAL-Q62.js"></script>
+		<!-- Twitterのスクリプト -->
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<!-- ogp -->
+		<head prefix=”og: http://ogp.me/ns#”>
+			<meta property="og:url" content="https://qoo622.github.io/Arsenal-Q62/YUME_ARSENAL-Q62.html" />
+			<meta property="og:type" content="website" />
+			<meta property="og:title" content="YUME | ARSENAL Q62" />
+			<meta property="og:description" content="通称「夢ビジョン」用のカスタム外装プロダクト" />
+			<meta property="og:site_name" content="ARSENAL Q62" />
+			<meta property="og:image" content="https://qoo622.github.io/Arsenal-Q62/img/YUME/DSC_0084_min.JPG" />
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@Qoo6221" />
+
 	</head>
 	
-	<body>
+	<body style="background-color: rgba(20,20,50,1); color: #FFFFFF;">
 		<div class="bg">
-			<img class="bg-logo" src="https://qoo622.github.io/Arsenal-Q62/img/logo/Arsenal-Q62_logo_bg_dark.svg">
+			<img class="bg-logo" src="../ARSENAL-Q62/img/logo/Arsenal-Q62_logo_bg_dark.svg">
 		</div>
 		
 	<!-- - - - - - - - - - - ここからHeader周り - - - - - - - - - - - -->
 		<header>
-			<a href="https://qoo622.github.io/Arsenal-Q62/index.html"><img class="header-logo" src="https://qoo622.github.io/Arsenal-Q62/img/logo/Q62-Arsenal_logo_Arsenal-Q62_logo_header_wh.svg"></a>
+			<a href="https://qoo622.github.io/Arsenal-Q62/index.html"><img class="header-logo_static" src="https://qoo622.github.io/Arsenal-Q62/img/logo/Q62-Arsenal_logo_Arsenal-Q62_logo_header_wh.svg"></a>
 		</header>
 		
 	<!-- - - - - - - - - - - ここからTop image周り - - - - - - - - - -->
 	<div class="single_top-wrapper"> <!-- ここでTop全体を作る親要素 -->
 			<div class="single_top-content_divider"> <!-- 背景を2分割 -->
 				<div class="single_top-content_left"> <!-- 左要素 -->
-						<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/logo_YUME.svg">
+						<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/logo_YUME_wh.svg">
 				</div>
 				<div class="single_top-content_right">  <!-- 右要素 -->
-					<img class="line-drawing-demo" src="https://qoo622.github.io/Arsenal-Q62/img/YUME/background-text_YUME.svg">
+					<div class="svg-container">
+						<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/background-text_YUME.svg">
+					<div id="animated-svg-container">
+					<!-- ここにSVGが描画される -->
+					</div>
+					</div>
+				</div>
+			</div>
 				</div>
 			</div>
 			<div class="single_top-content_center"> <!-- 中央要素 -->
@@ -47,19 +70,14 @@
 		</div>
 	
 	<!-- - - - - - - - - - - ここからAbout周り - - - - - - - - - -->
-	<div class="Content-wrapper">
-		<h2 class="collection-title">ABOUT</h2>
-		<div class="Column_wrapper">
-			<div class="Column-left">
-				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/DSC_0012@2x.png">
-			</div>
-			<div class="Column-right">
-				<p class="Catch-copy">“夢ビジョン”の限界を求めて</p>
-				<p class="Base-text">通称“夢ビジョン”をご存知でしょうか。界隈で一時期話題になった中華製の謎の激安デジタルナイトビジョンで、IR補助灯や録画機能を備えていながら2000円程度と驚異的な低価格を特徴としている製品です。</p>
-				<p class="Base-text">ミリタリーライクとは言い難い外観・1/4インチネジのみという乏しい汎用性から、様々なマウント等が考案されましたが、主にアイリリーフなどの問題からいわゆるヘルメットに装着してのハンズフリー運用はほぼ不可能に近い状態でした。</p>
-				<p class="Base-text">本キットはこの夢ビジョンを分解・3Dプリンター製の外装で再構築することで、外観と汎用性の問題を改善しようというプロダクトです。「モジュラー」の名の通り4部位5パーツのモジュール構成でできており、各種のオプションパーツを組み替えることでマウント方式の変更や機能の追加などの更新に対応しやすくなっています。</p>
-				<p class="Base-text">データはすべて公開していますので、お手元で用途に合わせて自由に選択、カスタムしていただけます。追加オプションの開発などについても歓迎しております。</p>
-			</div>
+	<div class="About">
+		<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/DSC_0078.jpg">
+		<div class="About-text">
+			<p class="Catch-copy">“夢ビジョン”の限界を求めて</p>
+			<p class="Base-text">通称“夢ビジョン”をご存知でしょうか。界隈で一時期話題になった中華製の謎の激安デジタルナイトビジョンで、IR補助灯や録画機能を備えていながら2000円程度と驚異的な低価格を特徴としている製品です。</p>
+			<p class="Base-text">ミリタリーライクとは言い難い外観・1/4インチネジのみという乏しい汎用性から、様々なマウント等が考案されましたが、主にアイリリーフなどの問題からいわゆるヘルメットに装着してのハンズフリー運用はほぼ不可能に近い状態でした。</p>
+			<p class="Base-text">本キットはこの夢ビジョンを分解・3Dプリンター製の外装で再構築することで、外観と汎用性の問題を改善しようというプロダクトです。「モジュラー」の名の通り4部位5パーツのモジュール構成でできており、各種のオプションパーツを組み替えることでマウント方式の変更や機能の追加などの更新に対応しやすくなっています。</p>
+			<p class="Base-text">データはすべて公開していますので、お手元で用途に合わせて自由に選択、カスタムしていただけます。追加オプションの開発などについても歓迎しております。</p>
 		</div>
 	</div>
 	<!-- - - - - - - - - - - ここからFeature周り - - - - - - - - - -->
@@ -67,24 +85,42 @@
 		<h2 class="collection-title">FEATURE</h2>
 		<div class="Column_wrapper">
 			<div class="Three-Column_left">
+				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/IMG_1039_min.JPG">
 				<p class="Catch-copy_min">隠密性と駆動時間の向上</p>
-				<p class="Base-text">暗視モードで矯正点灯していたIR投光器を排除することにより、自己位置の曝露を防止するだけでなく駆動時間の延長に。</p>
-				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/PXL_20240131_050359789.jpg">
+				<p class="Base-text">暗視モードで強制点灯していたIR投光器を排除することにより、自己位置の曝露を防止するだけでなく駆動時間の延長に。</p>
 			</div>
 			<div class="Three-Column_center">
+				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/DSC_0072_min.JPG">
 				<p class="Catch-copy_min">マウント方法の自由化</p>
-				<p class="Base-text">G43系のフリップガンマウントや、DOVETAILインターフェースと接眼レンズオプションによるヘルメットマウントによる柔軟な運用が可能。</p>
-				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/PXL_20240131_050359789.jpg">
+				<p class="Base-text">G43系のフリップガンマウントやDOVETAILインターフェースと接眼レンズオプションによるヘルメットマウントなど、柔軟な運用が可能。</p>
 			</div>
 			<div class="Three-Column_right">
+				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/DSC_0084_min.JPG">
 				<p class="Catch-copy_min">オプションでの機能強化</p>
 				<p class="Base-text">ポリカーボネート製レンズガードの装着や偏光板での無段階でのモニター輝度調整、バッテリーの外部化など、実用性を向上。</p>
-				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/PXL_20240131_050359789.jpg">
 			</div>
 		</div>
 	</div>
+	<div class="Content-wrapper">
+		<div class="Column_wrapper">
+			<div class="Column-left">
+				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/DSC_0073_min.jpg">
+			</div>
+			<div class="Column-right">
+				<p class="Content-block_title">データの活用について</p>
+				<p class="Content-block_text">プロダクトに関しては皆様のDIYを応援する意図で、基本的にすべてGithub上で無料で公開しています。公開しているデータは個人の範囲で自由にご利用いただけます。ご家庭の3Dプリンターや業者委託での出力などで活用ください。</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="Content-wrapper">
+		<div>
+			
+		</div>
+	</div>
+	
 	<!-- - - - - - - - - - - ここからUpdate周り - - - - - - - - - -->
-		
+
 	<!-- - - - - - - - - - - ここからGallery周り - - - - - - - - - -->
 		
 	<!-- - - - - - - - - - - ここからOthers周り - - - - - - - - - -->
@@ -102,6 +138,10 @@
 		</div>
 	</div>
 	
+	<!-- ここからTwitterシェアボタン -->
+	<div class="Twitter-share">
+		<a class="tweet-button" href="#"><i class="fa-brands fa-square-twitter"></i>Share</a>
+	</div>
 	<!-- - - - - - - - - - - ここからFooter周り - - - - - - - - - - -->
 		<div class="footer">
 			<div class="footer-link">
@@ -111,6 +151,5 @@
 			<img class="footer-logo" src="https://qoo622.github.io/Arsenal-Q62/img/logo/Q62-Arsenal_logo_Arsenal-Q62_logo_header_wh.svg">
 			<p class="footer-text">© 2024. Qoo622</p>
 		</div>
-	
 	</body>
 </html>
