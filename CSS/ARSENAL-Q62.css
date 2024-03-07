@@ -35,7 +35,7 @@ a {
 }
 
 .Content-wrapper {
-	max-width: 1920px;
+	max-width: 1280px;
 	min-width: 375px;
 	margin: 96px auto;
 	padding: 0px 72px;
@@ -187,7 +187,7 @@ h4 {
 
 .Catch-copy_min {
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.25rem;
 	display: inline-block;
 	margin-top: 16px;
@@ -208,11 +208,12 @@ h4 {
 	background-color: #FFF;
 	color: #000;
 	font-weight: bold;
-	font-size: 3rem;
+	font-size: 1.5rem;
 	display: inline-block;
 	margin: 0;
-	padding: 24px;
+	padding: 12px;
 }
+
 @media (max-width: 1000px) {
 	.Content-number {
 		font-size: 1.5rem;
@@ -257,7 +258,7 @@ h4 {
 	border: 2px solid #c0ff00;
 	display: inline-block;
 	width: 75vw;
-	max-width: 1920px;
+	max-width: 1280px;
 	padding: 16px 32px;
 	margin: 24px 0px;
 	font-weight: bold;
@@ -463,23 +464,23 @@ header a:hover {
 /* - - - - - - - - - - ここからUPDATE周り - - - - - - - - - - */
 
 .UPDATE {
-	max-width: 1920px;
+	max-width: 1280px;
 	position: relative;
 	padding: 0px 72px;
 	margin: 32px auto;
 }
 
 .Update-content {
-	display: block;
-	color: #000;
-	padding: 24px 24px;
-	border-bottom: 1px solid #999;
-	transition: all 0.5s;
+    display: block;
+    color: #000;
+    padding: 24px 24px;
+    border-bottom: 1px solid #999;
+    transition: all 0.5s;
 }
 
 .Update-content:hover {
-	background-color: #C0FF00;
-	color: #000;
+    background-color: #C0FF00;
+    color: #000;
 }
 
 .Update-content_no-link {
@@ -495,7 +496,7 @@ header a:hover {
 
 .PRODUCTS {
 	background-color: rgba(0,0,255,0.2);
-	max-width: 1920px;
+	max-width: 1280px;
 	height: 750px;
 	margin: 96px auto;
 	padding: 0px 72px;
@@ -549,6 +550,7 @@ header a:hover {
 
 .Product-image {
 	width: 50%;
+	padding: 32px;
 }
 
 .Product-text {
@@ -596,6 +598,7 @@ header a:hover {
 }
 
 
+
 /* - - - - - - - - - - ここからDISCLAIMER周り - - - - - - - - - - */
 
 
@@ -610,7 +613,7 @@ header a:hover {
 
 
 .footer-link {
-	max-width: 1920px;
+	max-width: 1280px;
 	margin: 32px auto;
 	padding: 0px 0px;
 	display: flex;
@@ -649,7 +652,7 @@ header a:hover {
 
 .footer-logo {
 	width: 25vw;
-	max-width: 1920px;
+	max-width: 1280px;
 	min-width: 300px;
 }
 
