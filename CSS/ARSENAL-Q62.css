@@ -94,7 +94,7 @@ a {
 	width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 670px) {
 	
 	.Column_wrapper {
 		flex-direction: column;
@@ -175,6 +175,7 @@ h3 {
 h4 {
 	font-weight:  bold;
 	font-size: 1rem;
+	margin-bottom: 0;
 }
 
 .Catch-copy {
@@ -494,27 +495,15 @@ header a:hover {
 
 /* - - - - - - - - - - ここからPRODUCT周り - - - - - - - - - - */
 
-.PRODUCTS {
-	background-color: rgba(0,0,255,0.2);
-	max-width: 1280px;
-	height: 750px;
-	margin: 96px auto;
-	padding: 0px 72px;
-	position: relative;
-}
-
-.Product-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .Product {
 	width: 100%;
 	flex: auto;
 	display: flex;
 	align-items: center;
-	border-radius: 10px;
+	border-radius: 16px;
 	margin-bottom: 32px;
+	filter: drop-shadow(10px 10px 0px #C0FF00);
+	position: relative;
 }
 
 .light {
@@ -522,15 +511,26 @@ header a:hover {
 	color: #000;
 }
 
+.light:hover {
+	background-color: #FFF;
+	color: #666;
+}
+
 .dark {
 	background-color: #000;
 	color: white;
 }
 
+.dark:hover {
+	background-color: #222;
+	color: #ddd;
+}
+
 .Product-title {
 	font-weight: bold;
-	font-size: 1.5rem;
-	line-height: 1.5rem;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0px;
 	/* 行数溢れを省略 */
 	overflow: hidden;
   	display: -webkit-box;
@@ -543,14 +543,21 @@ header a:hover {
 	padding: 32px 24px 40px 24px;
 }
 
-.Product-description a {
-	width: 100%;
-	text-align: center;
+.tag {
+	background-color: #C0FF00;
+	color: #000;
+	font-size: 0.75rem;
+	line-height: 0.75rem;
+	display: inline-block;
+	padding: 0.2rem 0.5rem;
+	border-radius: 2rem;
+	margin-right: 8px;
 }
 
 .Product-image {
 	width: 50%;
 	padding: 32px;
+	z-index: 2;
 }
 
 .Product-text {
@@ -558,11 +565,56 @@ header a:hover {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	height: auto;
+	margin-top: 0;
 	/* 行数溢れを省略 */
 	overflow: hidden;
   	display: -webkit-box;
   	-webkit-box-orient: vertical;
   	-webkit-line-clamp: 3; /* 任意の行数を指定 */
+}
+
+.Product-min {
+	background-color: #F0F0F0;
+	/* backdrop-filter: blur(3px); */
+	border-radius: 16px;
+	padding: 32px;
+	display: inline-block;
+	width: 100%;
+	color: #000;
+	position: relative;
+}
+
+.GoToPage {
+	background-color: #C0FF00;
+	text-align: right;
+	padding: 12px 0px 12px 24px;
+	font-weight: bold;
+	color: #000;
+	border-radius: 16px 0 16px 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-bottom: 0;
+}
+
+.Product-min:hover {
+	background-color: #FFF;
+	/* backdrop-filter: blur(6px); */
+}
+
+.Product-min img {
+	width: 100%;
+	border-radius: 12px;
+}
+
+.GoToGithub {
+	text-align: right;
+	font-weight: bold;
+	background-color: #C0FF00;
+	padding: 8px 0 8px 16px;
+	border-radius: 3rem;
+	position: absolute;
+	right: -24px;
 }
 
 @media (max-width: 1000px) {
@@ -573,6 +625,11 @@ header a:hover {
 	.Product {
 		width: 100%;
 	}
+	
+	.Product-title {
+		font-size: 1.5rem;
+	}
+	
 }
 
 @media (max-width: 670px) {
@@ -594,7 +651,6 @@ header a:hover {
 	.Product-description btn {
 		width: auto;
 	}
-	
 }
 
 
@@ -623,7 +679,7 @@ header a:hover {
 
 .footer-link a {
 	padding: 48px 48px;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: bold;
 	line-height: 24px;
 	text-align: center;
