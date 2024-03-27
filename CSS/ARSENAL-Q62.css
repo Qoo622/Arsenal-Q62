@@ -48,14 +48,6 @@ a {
 	}
 }
 
-.single-column_center {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 .Column_wrapper {
 	display: flex;
 }
