@@ -93,7 +93,7 @@
 		<div class="About-text">
 			<p class="Catch-copy">“夢ビジョン”の果てを求めて</p>
 			<p class="Base-text">通称“夢ビジョン”をご存知でしょうか。界隈で一時期話題になった中華製の謎の激安デジタルナイトビジョンで、IR補助灯や録画機能を備えていながら2000円程度と驚異的な低価格を特徴としている製品です。</p>
-			<p class="Base-text">ミリタリーライクとは言い難い外観・1/4インチネジのみという乏しい汎用性から、様々なマウント等が考案されましたが、主にアイリリーフなどの問題からいわゆるヘルメットに装着してのハンズフリー運用はほぼ不可能に近い状態でした。</p>
+			<p class="Base-text">ミリタリーライクとは言い難い外観・1/4インチネジのみという乏しい汎用性から様々なマウント等が考案されましたが、主にアイリリーフなどの問題からヘルメットに装着してのハンズフリー運用はほぼ不可能に近い状態でした。</p>
 			<p class="Base-text">本キットはこの夢ビジョンを分解・3Dプリンター製の外装で再構築することで、外観と汎用性の問題を改善しようというプロダクトです。「モジュラー」の名の通り4部位5パーツのモジュール構成でできており、各種のオプションパーツを組み替えることでマウント方式の変更や機能の追加などの更新に対応しやすくなっています。</p>
 			<p class="Base-text">データはすべて公開していますので、お手元で用途に合わせて自由に選択、カスタムしていただけます。追加オプションの開発などについても歓迎しております。</p>
 		</div>
@@ -139,18 +139,58 @@
 		<div class="V-Card">
 			<div class="V-Card_Text">
 				<p class="Content-number">02</p>
-				<h3>マウント方法の自由化</h3>
-				<p class="Base-text">2台利用しての双眼運用でも400gを切る最軽量級。ガンマウントオプションでのドットサイトとのタンデム運用も可能。</p>
+				<h3>サーマルフュージョン</h3>
+				<p class="Base-text">スマホ向けサーマルカメラとRaspberry Piのオプション追加で熱源可視化能力を獲得。</p>
 			</div>
 			<div class="V-Card_Photo">
-				<img src="https://qoo622.github.io/Arsenal-Q62/img/YUME/DSC_0072~2.jpg" >
+				<img src="https://github.com/Qoo622/3D-print/blob/master/_image/YUME/Daydream/DSC_0134-Enhanced-NR.jpg?raw=true" >
 			</div>
 		</div>
 	</div>
+
+	<!-- - - - - - - - - - - ここからThermal Fusion周り - - - - - - - - - -->
 	
+	<div class="Content-wrapper">
+		<h2 class="collection-title">FUSION</h2>
+		<div class="Column_wrapper">
+			<div class="Column-left">
+				<img src="https://github.com/Qoo622/3D-print/blob/master/_image/YUME/Daydream/DSC_0149.jpg?raw=true" width="100%"/>
+			</div>
+			<div class="Column-right">
+				<h3>サーマルフュージョンオプション “Day Dream”</h3>
+				<p class="Base-text">夢ビジョンの映像に熱源を可視化した映像を重ね合わせる、いわゆる『フュージョン』と呼ばれる視界を実現するシステムです。</p>
+				<p class="Base-text">夢ビジョン単体ではIRライトの補助がないと完全暗所で視界を確保するのは厳しいですが、本機はサーマルの支援を受けることで視界の中の人物などを強調し、使い方次第では昼間でも偽装などに対する強力な視覚補助を得ることができます。</p>
+				<p class="Base-text">名称の“Day Dream(白昼夢)”とは、サーマルシステムの補助により昼間にも利用可能であること、不可能と思われた幻覚＝白昼夢を実現したこと、先行公開時にいただいた「こんなん白昼夢やん！」というリアクションが元となっています。</p>
+				<p class="Base-text">なお、本システムのコア部分の構築は友人のgb7k氏により実現されています。再現される際は氏のドキュメントを参照ください。</p>
+			</div>
+		</div>
+		<div class="Column_wrapper" style="margin-top: 48px;">
+			<div class="Three-Column_left">
+				<img src="https://github.com/Qoo622/3D-print/blob/master/_image/YUME/Daydream/20240506_232100_470_exported_56208_Original.jpeg?raw=true">
+				<p class="Catch-copy_min">White Hot</p>
+				<p class="Base-text">相対的に温度の高い部分を明るく表示するモード。距離約10ｍの人物（立位）が強調されている。IR補助灯なし。</p>
+			</div>
+			<div class="Three-Column_center">
+				<img src="https://github.com/Qoo622/3D-print/blob/master/_image/YUME/Daydream/20240506_232100_470_exported_82916_Original.jpeg?raw=true">
+				<p class="Catch-copy_min">Black Hot</p>
+				<p class="Base-text">相対的に温度の高い部分を暗く表示するモード。同条件。熱源の詳細をIRで視認したい場合に有効。</p>
+			</div>
+			<div class="Three-Column_right">
+				<img src="https://github.com/Qoo622/3D-print/blob/master/_image/YUME/Daydream/20240506_232100_470_exported_177666_Original.jpeg?raw=true">
+				<p class="Catch-copy_min">Outline</p>
+				<p class="Base-text">人体など特徴的な熱源の輪郭を強調するモード。距離5ｍほど。極力IRでの視界を活かしたい場合に。</p>
+			</div>
+		</div>
+	</div>
+
 	<!-- - - - - - - - - - - ここからUpdate周り - - - - - - - - - -->
+
 	<div class="Content-wrapper">
 		<h2 class="collection-title">UPDATE</h2>
+		<a class="Update-content" href="https://github.com/Qoo622/3D-print/tree/master/Yume-Vision/YUME_v1/DayDream" target="_blank" rel="noopener noreferrer">
+			<div class="Date">2024.05.07.</div>
+			<div class="Base-text">サーマルフュージョンオプション『DayDream』を公開しました。</div>
+		</a>
 		<div class="Update-content_no-link">
 			<div class="Date">2024.04.08.</div>
 			<div class="Base-text">Frontの印刷効率を高めたv1.2と組み込み補助用のスペーサーを公開しました。</div>
