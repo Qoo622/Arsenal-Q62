@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ふわっと出現
     $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
-        var elemPos = $(this).offset().top-0; //上の0px要素より
+        var elemPos = $(this).offset().top-100; //上の0px要素より
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
         if (scroll >= elemPos - windowHeight){
