@@ -36,6 +36,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    //画面がスクロールされたら動く記述
+    $(window).scroll(function(){
+
+    // ふわっと出現
+    $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
+        var elemPos = $(this).offset().top-50; //上の50px要素より
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight){
+            $(this).addClass('fadeUp');//画面内に入ったらfadeUpというクラス名を追記
+        } else {
+            $(this).removeClass('fadeUp');//画面外に出たらfadeUpというクラス名を外す
+        }    });
+        //ここまで動きのきっかけ指定
+    }); //ここまで画面が読み込まれたときに動く記述
+
     // Twitter Share
     var tweetButton = document.querySelector('.tweet-button');
     if (tweetButton) {
