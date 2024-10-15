@@ -538,6 +538,27 @@ header a:hover {
   	-webkit-line-clamp: 1; /* 任意の行数を指定 */
 }
 
+.fadeUpTrigger {
+	opacity: 0;
+}
+
+.fadeUp {
+	animation-name: fadeUpAnime;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes fadeUpAnime {
+	from {
+		opacity: 0;
+		transform: traslateY(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .Product-description {
 	width: 50%;
 	padding: 32px 24px 40px 24px;
