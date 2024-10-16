@@ -551,7 +551,7 @@ header a:hover {
 @keyframes fadeUpAnime {
 	from {
 		opacity: 0;
-		transform: traslateY(100px);
+		transform: translateY(100px);
 	}
 	to {
 		opacity: 1;
