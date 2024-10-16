@@ -540,24 +540,27 @@ header a:hover {
 
 .fadeUpTrigger {
 	opacity: 0;
+	z-index: 10; /* 必要に応じて調整 */
 }
 
 .fadeUp {
 	animation-name: fadeUpAnime;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
-	opacity: 0;
+	opacity: 1; /* アニメーションが終了した後にopacityを1に設定 */
 }
+
 @keyframes fadeUpAnime {
 	from {
 		opacity: 0;
-		transform: translateY(100px);
+		transform: translateY(150px); /* 少し大きめの値を試してみる */
 	}
 	to {
 		opacity: 1;
 		transform: translateY(0);
 	}
 }
+
 
 .Product-description {
 	width: 50%;
