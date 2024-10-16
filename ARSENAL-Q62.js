@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //画面がスクロールされたら動く記述
-    $(window).scroll(function(){
+    $(window).on('load scroll', function() {
 
     // ふわっと出現
     $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
