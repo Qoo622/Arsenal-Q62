@@ -545,7 +545,7 @@ header a:hover {
 
 .fadeUp {
 	animation-name: fadeUpAnime;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	opacity: 1; /* アニメーションが終了した後にopacityを1に設定 */
 }
