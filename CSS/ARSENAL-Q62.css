@@ -160,7 +160,7 @@ h1 {
 	position: absolute;
 	top:  -96px;
 	left: -16px;
-	z-index: -10;
+	z-index: 1;
 	font-weight: bold;
 	font-size: 4rem;
 	letter-spacing: 7px;
@@ -168,16 +168,14 @@ h1 {
 }
 
 .randomTextTrigger {
-    opacity: 0;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
+    opacity: 0; /* 初期は透明 */
     transition: opacity 1s ease;
 }
 
 .randomText {
-    opacity: 1;
+    opacity: 1; /* アニメーション後は表示 */
 }
+
 
 h3 {
 	font-weight: bold;
