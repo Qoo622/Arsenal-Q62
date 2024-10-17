@@ -35,7 +35,25 @@
 		<!-- jsの読み込み -->
 		<script src="ARSENAL-Q62.js"></script>
 		<!-- jQueryの読み込み -->
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script>
+		  $(document).ready(function() {
+		    // スクロールイベント
+		    $(window).on('scroll', function() {
+			$('.randomTextTrigger').each(function() {
+			    var elemPos = $(this).offset().top - 50;
+			    var scroll = $(window).scrollTop();
+			    var windowHeight = $(window).height();
+		
+			    if (scroll >= elemPos - windowHeight && !$(this).hasClass('randomText')) {
+				var targetText = $(this).data('text');
+				animateText($(this), targetText);
+				$(this).addClass('randomText');
+			    }
+			});
+		    });
+		  });
+		</script>
 		<!-- ogp -->
 		<head prefix=”og: http://ogp.me/ns#”>
 			<meta property="og:url" content="https://qoo622.github.io/Arsenal-Q62/index.html" />
