@@ -336,7 +336,7 @@ header{
 	width: 100vw;
 	/* 上に固定 */
 	position: fixed;
-	z-index: 10;
+	z-index: 20;
 	padding: 0px 72px;
 }
 
