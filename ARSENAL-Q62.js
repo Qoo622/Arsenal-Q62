@@ -79,22 +79,31 @@ $(window).on('scroll', function() {
 });
 
 function animateText(element, finalText) {
-    var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    var currentText = Array(finalText.length).fill(''); // テキストの長さに合わせて初期化
-    var i = 0;
+    var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';  // ランダムに表示する文字
+    var finalLength = finalText.length;  // 最終テキストの長さ
+    var currentText = '';  // 確定している文字列
+    var i = 0;  // 現在のインデックス
 
+    // 一文字ずつランダムに表示し、最終的なテキストに置き換える
     var interval = setInterval(function() {
-        if (i < finalText.length) {
-            // 各文字をランダムな文字に置き換えながら進行
-            currentText[i] = randomChars.charAt(Math.floor(Math.random() * randomChars.length));
-            element.text(currentText.join('')); // currentText全体を表示
+        if (i < finalLength) {
+            var randomText = '';  // ランダム文字列を生成
+            for (var j = i; j < finalLength; j++) {
+                randomText += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+            }
 
-            i++;
+            // ランダムな部分と確定部分を結合して表示
+            element.text(currentText + randomText);
+
+            // 現在の文字を確定させて次の文字に進む
+            currentText += finalText.charAt(i);
+            i++;  // 次の文字に移動
         } else {
-            // 最終的なテキストに置き換え
+            // アニメーション終了: 最終的なテキストを設定
             clearInterval(interval);
-            element.text(finalText);  // 完全なテキストにする
-            element.css('opacity', 1); // テキストの不透明度を1にして表示
+            element.text(finalText);
+            element.css('opacity', 1);  // 完全に表示
         }
-    }, 100);  // 文字が変わる速度を指定
+    }, 150);  // 150msごとに1文字処理（必要に応じて調整可能）
 }
+
