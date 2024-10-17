@@ -62,3 +62,39 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// テキストのランダム出現処理
+$(window).on('scroll', function() {
+    $('.randomTextTrigger').each(function() {
+        var elemPos = $(this).offset().top - 50;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        if (scroll >= elemPos - windowHeight && !$(this).hasClass('randomText')) {
+            var targetText = $(this).data('text');
+            animateText($(this), targetText);
+            $(this).addClass('randomText');  // 2度目以降アニメーションをしない
+        }
+    });
+});
+
+function animateText(element, finalText) {
+    var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var currentText = '';
+    var i = 0;
+
+    var interval = setInterval(function() {
+        if (i < finalText.length) {
+            // 各文字をランダムな文字に置き換えながら進行
+            currentText += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+            element.text(currentText);
+
+            i++;
+        } else {
+            // 最終的なテキストに置き換え
+            clearInterval(interval);
+            element.text(finalText);  // 完全なテキストにする
+            element.css('opacity', 1); // テキストの不透明度を1にして表示
+        }
+    }, 100);  // 文字が変わる速度を指定
+}
