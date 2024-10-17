@@ -79,15 +79,15 @@ $(window).on('scroll', function() {
 });
 
 function animateText(element, finalText) {
-    var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var currentText = '';
+    var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    var currentText = Array(finalText.length).fill(''); // テキストの長さに合わせて初期化
     var i = 0;
 
     var interval = setInterval(function() {
         if (i < finalText.length) {
             // 各文字をランダムな文字に置き換えながら進行
-            currentText += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
-            element.text(currentText);
+            currentText[i] = randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+            element.text(currentText.join('')); // currentText全体を表示
 
             i++;
         } else {
